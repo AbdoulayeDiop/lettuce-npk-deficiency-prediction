@@ -14,7 +14,7 @@ else:
     device = "cpu"
 
 #load the saved model
-MODEL_PATH = "lettuce_npk.pth"
+MODEL_PATH = "model/lettuce_npk.pth"
 model = torch.load(MODEL_PATH).to(device)
 model.eval()
 

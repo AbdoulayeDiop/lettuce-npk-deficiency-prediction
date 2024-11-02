@@ -16,8 +16,8 @@ jobs:
       - name: Add remote 
         env:
           Hugging_Face: ${{ secrets.Hugging_Face }}
-        run: git remote add space https://huggingface.co/spaces/AbdoulayeDIOP/lettuce-npk-deficiency-prediction
+        run: git remote add space https://Hugging_Face:$Hugging_Face@huggingface.co/spaces/AbdoulayeDIOP/lettuce-npk-deficiency-prediction
       - name: Push to hub
         env:
           Hugging_Face: ${{ secrets.Hugging_Face }}
-        run: git push --force https://huggingface.co/spaces/AbdoulayeDIOP/lettuce-npk-deficiency-prediction main
+        run: git push --force https://Hugging_Face:$Hugging_Face@huggingface.co/spaces/AbdoulayeDIOP/lettuce-npk-deficiency-prediction main
